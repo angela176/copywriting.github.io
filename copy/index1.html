@@ -26,8 +26,8 @@
         let game=document.getElementById('game');
         let deg=0,ex=0,ey=0,vx=0,vy=0,count=0;
         window.addEventListener('mousemove',(e)=>{
-          ex=e.x-game.offsetLeft-game.clientWidth/1;
-          ey=e.y-game.offsetTop-game.clientHeight/1;
+          ex=e.x-game.offsetLeft-game.clientWidth/30;
+          ey=e.y-game.offsetTop-game.clientHeight/30;
           deg=360*Math.atan(ey/ex)/(2*Math.PI)+45;
           if(ex<0){
             deg+=180;
