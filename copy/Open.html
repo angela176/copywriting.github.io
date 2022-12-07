@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Copywriting gp project</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script&family=Indie+Flower&family=Oleo+Script+Swash+Caps:wght@400;700&family=Pacifico&family=Permanent+Marker&family=Press+Start+2P&family=Shadows+Into+Light&family=Tapestry&family=Water+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+      <div class="container">
+          <a href="https://angela176.github.io/copywriting.github.io/copy/Homepage.html" target="_blank"><div class="bubble"><p>Switch x Nike</p></div></a>
+          <div class="shadow"></div>
+      </div>
+      <div id="game">
+        <i class="fa-solid fa-gamepad"></i>
+      </div>
+      <script>
+        let game=document.getElementById('game');
+        let deg=0,ex=0,ey=0,vx=0,vy=0,count=0;
+        window.addEventListener('mousemove',(e)=>{
+          ex=e.x-game.offsetLeft-game.clientWidth/30;
+          ey=e.y-game.offsetTop-game.clientHeight/30;
+          deg=360*Math.atan(ey/ex)/(2*Math.PI)+45;
+          if(ex<0){
+            deg+=180;
+          }
+          count=0;
+        })
+        function draw(){
+          game.style.transform='rotate('+deg+'deg)';
+          if(count<100){
+            vx+=ex/100;
+            vy+=ey/100;
+          }
+          game.style.left=vx+'px';
+          game.style.top=vy+'px';
+          count++;
+        }
+        setInterval(draw, 1)
+      </script>
+     
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
