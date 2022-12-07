@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(125deg, #A88BEB, #F1A7F1, #F8CEEC, #FAD0C4, #FFD8CB);
+    background-size: 500%;
+    animation: bgAnimation 15s linear infinite;
+}
+
+@keyframes bgAnimation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1;
+    transition: 0.6s;
+}
+
+header .navbar {
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+}
+
+header ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 50;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header.sticky{
+    padding: 70px 80px;
+    background-color: #FC575E;
+}
+
+header.sticky .container-fluid,
+header.sticky ul li a{
+    color: #42a7e1;
+}
+
+.bg1 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg1text {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+
+.bg1text p {
+    text-shadow: 0 0 10px #B0F3F1, 0 0 20px #B0F3F1, 0 0 50px #B0F3F1, 0 0 100px #B0F3F1, 0 0 200px #B0F3F1;
+    animation: twinkle 0.5s infinite alternate;
+}
+
+@keyframes twinkle{
+    0%{
+        text-shadow: unset;
+    }
+    100%{
+        text-shadow: 0 0 10px #B0F3F1, 0 0 20px #B0F3F1, 0 0 50px #B0F3F1, 0 0 100px #B0F3F1, 0 0 200px #B0F3F1;
+    }
+}
+
+.bg2 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg2text h6{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0 0 0;
+    text-decoration: underline;
+}
+
+.bg2text h5{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px 0 0 25px;
+}
+
+.bg2text p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    float: left;
+    padding: 10px 0 0 25px;
+}
+
+.bg3 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg3text h6{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0 0 0;
+    text-decoration: underline;
+}
+
+.bg3text h5{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px 0 10px 25px;
+}
+
+.bg3text p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 10px 0 0 25px;
+}
+
+.bg4 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg4text h6{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0 0 0;
+    text-decoration: underline;
+}
+
+.bg4text h5{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px 0 10px 25px;
+}
+
+.bg4text p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 10px 0 0 25px;
+}
+
+.bg5 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg5text h6{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0 0 0;
+    text-decoration: underline;
+}
+
+.bg5text h5{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px 0 10px 25px;
+}
+
+.bg5text p{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 10px 0 0 25px;
+}
+
+.bg6 img {
+    width: 300px;
+    padding: 30px 30px 30px 30px;
+}

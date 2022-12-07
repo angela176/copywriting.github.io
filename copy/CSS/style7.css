@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(125deg, #78aeec, #2b75b6, #ee62d4, #7db047, #b3715b);
+    background-size: 500%;
+    animation: bgAnimation 15s linear infinite;
+}
+
+@keyframes bgAnimation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1;
+    transition: 0.6s;
+}
+
+header .navbar {
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+}
+
+header ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 50;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header.sticky{
+    padding: 70px 80px;
+    background-color: #FC575E;
+}
+
+header.sticky .container-fluid,
+header.sticky ul li a{
+    color: #42a7e1;
+}
+
+.bg1 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg1text p {
+    color: #fc6436;
+    font-size: 40px;
+    text-align: center;
+}
+
+.bg1text h6{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+    padding: 160px 0 0 0;
+    text-shadow: 0 0 10px #E4B5CB, 0 0 20px #E4B5CB, 0 0 50px #E4B5CB, 0 0 100px #E4B5CB, 0 0 200px #E4B5CB;
+}
+
+.bg2 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg2text h6{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.bg2text h5{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0 0 25px;
+}
+
+.bg2text p{
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 10px 0 0 25px;
+}
+
+.bg3 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg3text h6{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.bg3text h5{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0 10px 25px;
+}
+
+.bg4 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg4text h6{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.bg4text h5{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0 10px 25px;
+}
+
+.bg5 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg5text h6{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.bg5text h5{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0 10px 25px;
+}
+
+.bg6 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg6text h6{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px 0 0 0;
+}
+
+.bg6text p{
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 10px 0 0 25px;
+}
+
+.bg7 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg8 img {
+    width: 300px;
+    padding: 30px 30px 30px 30px;
+}

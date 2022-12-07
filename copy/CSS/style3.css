@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+    background-size: 500%;
+    animation: bgAnimation 15s linear infinite;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1;
+    transition: 0.6s;
+}
+
+header .navbar {
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+}
+
+header ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 50;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+.bg1 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg1text{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.style1 {
+    border: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+.wavy {
+    position: relative;
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    padding: 60px 0px 0px 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: wavyAnimate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes wavyAnimate {
+    0%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20%);
+    }
+    40%,100%{
+        transform: translateY(0);
+    }
+}
+
+.bg2text p{
+    color: #fff;
+    font-size: 10px;
+    float: left;
+    padding: 50px 0px 0px 25px;
+}
+
+.bg3 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg3text {
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 50px 0px 0px 0px;
+}
+
+.bg3 p{
+    color: #fff;
+    font-size: 10px;
+    float: left;
+    padding: 50px 0px 0px 25px;
+
+}
+
+.bg4 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg4text {
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 50px 0px 0px 0px;
+}
+
+.bg4 p{
+    color: #fff;
+    font-size: 10px;
+    float: left;
+    padding: 50px 0px 0px 25px;
+
+}
+
+.bg5 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg5text {
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 50px 0px 0px 0px;
+}
+
+.bg5 p{
+    color: #fff;
+    font-size: 10px;
+    float: left;
+    padding: 50px 0px 0px 25px;
+
+}
+
+.bg6 {
+    position: relative;
+    width: 500px;
+    float: right;
+    display: block;
+    overflow: hidden;
+    padding: 150px 0px 0px 20px;
+}
+
+.bg6text {
+    color: #fff;
+    text-align: left;
+    font-size: 5px;
+    padding: 150px 0px 0px 25px;
+}
+
+.bg7 {
+    position: relative;
+    width: 400px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    padding: 100px 0px 0px 0px;
+}
+
+.bg8text {
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    padding: 20px 0px 0px 25px;
+
+}
+
+.bg9 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg9text {
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 50px 0px 0px 0px;
+}
+
+.bg9 p{
+    color: #fff;
+    font-size: 10px;
+    float: left;
+    padding: 50px 0px 0px 25px;
+}
+
+.bg9 h6{
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    padding: 10px 0px 0px 25px;
+    text-decoration: underline;
+}
+
+.bg10 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg10 p{
+    color: #fff;
+    font-size: 10px;
+    float: left;
+    padding: 50px 0px 0px 25px;
+}
+
+.bg10 h6{
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    padding: 10px 0px 0px 25px;
+    text-decoration: underline;
+}
+
+.bg11 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg11 p{
+    color: #fff;
+    font-size: 10px;
+    float: left;
+    padding: 50px 0px 0px 25px;
+}
+
+.bg11 h6{
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    padding: 10px 0px 0px 25px;
+    text-decoration: underline;
+}
+
+.bg12 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+    overflow: hidden;
+}
+
+.bg12 p{
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    z-index: 1;
+    display: inline;
+    top: 150px;
+    right: 20px;
+}
+
+.bg12 h6{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    display: inline;
+    top: 80px;
+    right: 20px;
+}
+
+.bg13 img {
+    position: relative;
+    width: 500px;
+    height: 270px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    padding: 20px 0px 20px 25px;
+}
+
+.bg13 p{
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 10px 0px 0px 25px;
+}
+
+.bg14 img {
+    position: relative;
+    display: block;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 25px 0px 25px;
+
+}
+
+.bg14 p{
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 20px 0px 0px 25px;
+}
+
+.bg14 h6{
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    padding: 10px 0px 0px 25px;
+    text-decoration: underline;
+}
+
+.bg15 img {
+    position: relative;
+    display: block;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 25px 0px 25px;
+
+}
+
+.bg15 p{
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 20px 0px 0px 25px;
+}
+
+.bg15 h6{
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    padding: 10px 0px 0px 25px;
+    text-decoration: underline;
+}
+
+.bg16 img {
+    position: relative;
+    display: block;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0px 25px 0px 25px;
+
+}
+
+.bg16 p{
+    color: #fff;
+    font-size: 15px;
+    float: left;
+    padding: 20px 0px 50px 25px;
+}
+
+.bg16 h6{
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    padding: 10px 0px 0px 25px;
+    text-decoration: underline;
+}
+
+.bg17 {
+    position: relative;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -999;
+}
+
+.bg17text {
+    background-image: url(../image/img22.JPG);
+    color: #ff4f4f;
+    font-size: 20px;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+header.sticky{
+    padding: 70px 80px;
+    background-color: #FC575E;
+}
+
+header.sticky .container-fluid,
+header.sticky ul li a{
+    color: #42a7e1;
+}
+
+@keyframes bgAnimation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.buy{
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 0;
+    color: #e1ff00;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.bt{
+    font-size: 10px;
+    color: white;
+}
+
+.buy:hover{
+    background: #f875e7;
+    color: #050801;
+    box-shadow: 0 0 5px #f875e7,
+                0 0 25px #f875e7,
+                0 0 50px #f875e7,
+                0 0 200px #f875e7;
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+.buy:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+
+.buy:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+
+.buy span{
+    position: absolute;
+    display: block;
+}
+
+.buy span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#f875e7);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+.buy span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f875e7);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+.buy span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#f875e7);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+.buy span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f875e7);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+.container1 {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 70vh;
+
+}
+
+.card-box {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0 1%;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    line-height: 0;
+}
+
+.card-box img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: 0.5s;
+}
+
+.card-box:hover {
+    flex: 1 1 50%;
+}
+  
+.card-box:hover img {
+    width: 100%;
+    height: 100%;
+}
